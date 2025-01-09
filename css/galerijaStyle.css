@@ -1,0 +1,96 @@
+:root{
+    --accentColor:rgba(106,98,214,1);
+}
+
+main{
+    width: 80%;
+    min-height: 80vw;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 5rem;
+    
+}
+.galery{
+    gap: 3rem;
+    margin-top: 3rem;
+    display: flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.coverImage{
+    width: 60%;
+    height: 30rem;
+    /* border: 1px solid red; */
+    margin:auto;
+    transition: all .3s;
+}
+
+.coverImage img{
+    width: 100%;
+    height: 100%;
+}
+.coverImage:hover{
+transform: scale(1.1);
+}
+
+.image{
+    width: 30%;
+    height: 15rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: all .3s ;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 90%;
+    }
+
+    .coverImage {
+        width: 80%;
+        height: 20rem;
+    }
+
+    .galery {
+        gap: 2rem;
+        justify-content: space-around;
+    }
+
+    .image {
+        width: 45%;
+        height: auto;
+    }
+}
+
+/* Responzivni dizajn za još manje ekrane (do 600px) */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    .coverImage {
+        width: 90%;
+        height: 15rem;
+    }
+
+    .galery {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .image {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Za vrlo velike ekrane, dodatno širimo slike u galeriji */
+@media (min-width: 1500px) {
+    .image {
+        width: 25%;
+    }
+}

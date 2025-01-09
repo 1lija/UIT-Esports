@@ -1,0 +1,117 @@
+:root{
+    --accentColor:rgba(106,98,214,1);
+}
+
+.wrap{
+    width: 100%;
+    min-height: 90vh;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    border: 3px solid var(--accentColor);
+    width: 45rem;
+    height: 35rem;
+    background-color: rgba(62, 56, 148,.7);
+}
+
+
+form h1{
+    text-align: center;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.inputs{
+    /* border: 1px solid red; */
+    margin:auto;
+    margin-top: 5rem;
+    width: 80%;
+    height: 50%;
+}
+
+.inputs input{
+
+    width: 100%;
+    background-color: rgba(62, 56, 148,.7);
+    border: none;
+    border-bottom: 3px solid var(--accentColor);
+    height: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    pointer-events: all;
+    padding-left: .4rem;
+}
+
+.inputs input::placeholder{
+    color: rgba(173, 216, 230, 0.521);
+}
+.inputs label{
+    color: #fff;
+    margin-left: .4rem;
+}
+.inputs input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--accentColor);
+    background-color: rgba(53, 47, 131, 0.9);
+}
+
+.inputs textarea{
+    width: 100%;
+    background-color: rgba(62, 56, 148,.7);
+    border: none;
+    border-bottom: 3px solid var(--accentColor);
+    margin-bottom: 2.5rem;
+    color: #fff;
+    pointer-events: all;
+    padding-left: .4rem;
+    height: 8rem;
+    text-wrap: wrap;
+    resize: none;
+}
+.inputs textarea::-webkit-scrollbar {
+    width: .5rem;
+}
+
+.inputs textarea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 7px grey;
+    border-radius: 7px;
+}
+
+.inputs textarea::-webkit-scrollbar-thumb {
+    background: var(--accentColor);
+    border-radius: 10px;
+  }
+
+
+.submit-button{
+    width: 15rem;
+    height: 2.5rem;
+    margin:auto;
+    /* border: 1px solid red; */
+    margin-top: 4rem;
+    display: block;
+    background-color: #2499ff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color: white;
+    border-bottom: 5px solid #2499ff;
+    cursor: pointer;
+    transition: linear-gradient 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to bottom, rgba(36, 153, 255, 1) 0%, rgba(145, 217, 255, 1) 100%);
+    border-bottom: 5px solid rgba(145, 217, 255, 1);
+}
+
+@media screen and (max-height: 900px), (max-width:1000px){
+    .wrap{
+        align-items: normal;
+    }
+}

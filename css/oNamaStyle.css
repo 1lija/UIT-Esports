@@ -1,0 +1,81 @@
+:root{
+    --accentColor:rgba(106,98,214,1);
+    /* overflow: hidden; */
+}
+body{
+    min-height: 122vh;
+    
+}
+main{
+    min-height: 100vh;
+    width: 60%;
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: hsla(0,0%,100%,0.4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+main img{
+    filter:invert(1);
+    width: 8rem;
+    height: 8rem;
+    /* margin:auto; */
+    /* border: 1px solid red; */
+    margin-toP: 1rem;
+    margin-left: 1rem;
+
+}
+main h1{
+color: #fff;
+align-self: center;
+/* margin-left: 10%; */
+margin-right: 8%;
+}
+main p{
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+
+color: #fff;
+
+}
+
+main span{
+    width: 95%;
+    text-align: right;
+    padding-top: 1rem;
+    color: #fff;
+
+}
+
+@media screen and (max-width: 1245px){
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    .wrap img{
+        margin: none;
+    }
+
+}
+@media screen and (max-width: 1076px){
+    h1{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 940px){
+    h1{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 750px){
+    h1{
+        font-size: 1.4rem;
+    }
+}

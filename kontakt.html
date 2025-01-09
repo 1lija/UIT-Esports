@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kontakt </title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/kontaktStyle.css">
+    <!-- Font Teko -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="shadow">
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li> <a href="index.html"> Početna </a> </li>
+                <li> <a href="novosti.html"> Novosti </a> </li>
+                <li> <a href="galerija.html"> Galerija </a> </li>
+                <li> <a href="kontakt.html" class="active"> Kontakt </a></li>
+                <li> <a href="oNama.html"> O nama </a> </li>
+            </ul>
+        </nav>
+        <div class="wrap">
+            <form action="POST">
+                    <h1> Kontaktiraj nas </h1>
+                    <div class="inputs">
+                        <label for="name"> Unesite Vaše ime </label>
+                        <input type="text" name="name" id="" placeholder="Ime">
+                        
+                        <label for="email"> Unesite Vaš e-mail </label>
+                        <input type="email" name="email" id="" placeholder="E-mail">
+                        
+                        <label for="text"> Unesite Vašu poruku </label>
+                        <textarea name="text" id="" placeholder="Poruka"></textarea>
+
+                    </div>
+
+                    <button type="submit" class="submit-button"> Submit </button>
+            </form>
+        </div>
+
+        <footer>
+            <ul>
+                <li> <a href="index.html" class="active"> Početna </a> </li>
+                <li> <a href="novosti.html"> Novosti </a> </li>
+                <li> <a href="galerija.html"> Galerija </a> </li>
+                <li> <a href="kontakt.html"> Kontakt </a></li>
+                <li> <a href="oNama.html"> O nama </a> </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
